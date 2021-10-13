@@ -1,0 +1,42 @@
+.products img{
+	float:none;
+	padding-top: auto;
+	margin: 0 auto;
+	align-content: center;
+	height: 200px;
+	width: 200px;
+}
+.inventory-block{
+	float: center;
+}
+#products {
+	border-collapse: collapse;
+	position: center;
+
+}
+#products td, #products th {
+	border:  1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+#products td {
+	background-color: white;
+}
+#products th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: darkgreen;
+	color: white;
+}
+.page7-img{
+	background-image:url(list-background.jpg) ;
+	background-size: 100%;
+	background-position: center;
+}
+.list-header{
+	color: white;
+}
+.btn {
+	font-size: 20px;
+}

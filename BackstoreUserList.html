@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BackStore User List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <style>
+	  <title>Aisles</title>
+    <link rel="stylesheet" type="text/css" href="styles-universal.css" />
+    <link rel="stylesheet" type="text/css" href="styles-main.css" />
+    <link rel="stylesheet" type="text/css" href="BackStore.css" />
+  </style>
+  
+</head>
+
+<body>
+
+<!-- Header with menu -->
+     <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="homepage.html"><img src="testYourTaste.png" alt="Test your Taste Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <input type="text" placeholder="Search on online grocery" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="homepage.html" id="navbarAisles" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Aisles
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarAisles">
+                            <a class="dropdown-item" href="page2-1.html">Fruits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page2-1.html">Vegetables</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page2-2.html">Meat</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page2-4.html">Dairy and Eggs</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page2-3.html">Bread & Bakery Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="p5.html">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page7.html"><span class="material-icons md-24">Your Cart</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+
+           <h2>User List</h2>
+
+            <a class="backendbtn" href="BackstoreEditUser.html" style="position: absolute; right: 7%;">Add User</a>
+
+        <p>
+            <div class="backstore-menu" style="overflow-x:auto;">
+            <table class="backendtable" align="center">
+                <tr>
+                    <th>User First Name  &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                    <th>User Last Name &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                    <th>User Email Address &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                    <th>User City &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+                    <th>User Password &nbsp &nbsp &nbsp &nbsp &nbsp </th>
+                    <th colspan="2">Options &nbsp &nbsp &nbsp &nbsp &nbsp </th>
+                </tr>
+                <tr>
+                    <td>Jack</td>
+                    <td>Jones</td>
+                    <td>me123@gmail.com</td>
+                    <td>Montreal</td>
+                    <td>123456</td>
+                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>you123@gmail.com</td>
+                    <td>Quebec</td>
+                    <td>101010</td>
+                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Keanu</td>
+                    <td>vous123@gmail.com</td>
+                    <td>Toronto</td>
+                    <td>514514</td>
+                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Allan</td>
+                    <td>Kimberly</td>
+                    <td>hen123@gmail.com</td>
+                    <td>Ottawa</td>
+                    <td>111987</td>
+                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+				<tr>
+                    <td>James</td>
+                    <td>Knocks</td>
+                    <td>Door123@gmail.com</td>
+                    <td>Vancouver</td>
+                    <td>438348</td>
+                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+				<tr>
+                    <td>Alicia</td>
+                    <td>Temple</td>
+                    <td>Jezz123@gmail.com</td>
+                    <td>Edmonton</td>
+                    <td>778899</td>
+                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+				<tr>
+                    <td>Kevin</td>
+                    <td>About</td>
+                    <td>Hello123@gmail.com</td>
+                    <td>Ottawa</td>
+                    <td>455886</td>
+                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+            </table>
+            </div>
+        </p>
+
+
+  </div>
+
+  <div class="footer">
+    <a class="backstore-link" href="backstore-menu.html">Backstore</a>
+  </div>
+  
+  <!-- Optional JavaScript functionality -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"
+        ></script>
+
+  </body>
+
+</html>

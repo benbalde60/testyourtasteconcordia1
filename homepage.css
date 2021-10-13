@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    color:greenyellow;
+    font-family: 'Ephesis', cursive;
+}
+.navbar-brand:hover{
+    color:greenyellow;
+}
+.nav-link{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Noto Sans Mono', monospace;
+}
+.nav-link:hover{
+    color:greenyellow;
+}
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 40px;
+    margin-right: 1px;
+    outline: none;
+    border: 2px solid green;
+    font-weight: 300;
+}
+.btn0{
+    height: 40px;
+    width: 40%;
+    border-radius: 60px;
+    outline: none;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+}
+.btn0:hover{
+    background-color: darkgreen;
+    transition: 0.5s;
+}
+  
+.main{
+    background: url(frontpage.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+.main h1{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    margin-top: 150px;
+    padding: 50px;
+}
+.product h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.card:hover{
+    box-shadow: 0px 2px 19px 7px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.details{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(photos/lunch.jpg)no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+.details h1{
+    font-family: 'Ephesis', cursive;
+}

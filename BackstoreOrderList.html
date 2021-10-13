@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BackStore Order List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <style>
+	  <title>Aisles</title>
+    <link rel="stylesheet" type="text/css" href="styles-universal.css" />
+    <link rel="stylesheet" type="text/css" href="styles-main.css" />
+    <link rel="stylesheet" type="text/css" href="BackStore.css" />
+       
+  </style>
+</head>
+
+<body>
+
+<!-- Header with menu -->
+  <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="homepage.html"><img src="testYourTaste.png" alt="Test your Taste Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <input type="text" placeholder="Search on online grocery" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="homepage.html" id="navbarAisles" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Aisles
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarAisles">
+                            <a class="dropdown-item" href="page2-1.html">Fruits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page2-1.html">Vegetables</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page2-2.html">Meat</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page2-4.html">Dairy and Eggs</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="page2-3.html">Bread & Bakery Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="p5.html">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page7.html"><span class="material-icons md-24">Your Cart</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+           <h2>Orders List</h2>
+
+            <a class="backendbtn" href="BackstoreEditOrder.html" style="position: absolute; right: 7%;">Add Order</a>
+        <p>
+            <div class="backstore-menu" style="overflow-x:auto;">
+            <table class="backendtable" align="center">
+                <tr>
+                    <th>Order Number</th>
+                    <th>Order Cost</th>
+                    <th>Order User</th>
+                    <th>Order Products</th>
+                    <th colspan="2" style="text-align: center;">Options</th>
+                </tr>
+                <tr>
+                    <td>333111</td>
+                    <td>20$</td>
+                    <td>vous123@gmail.com</td>
+                    <td>Mangoes, Grapes, Cucumber</td>
+                    <td><a class="backendbtn" href="page12.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                
+               
+                <tr>
+                    <td>111666</td>
+                    <td>15$</td>
+                    <td>Jezz123@gmail.com</td>
+                    <td>Green Peppers, Cucumber, Grapes</td>
+                    <td><a class="backendbtn" href="page12.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>443356</td>
+                    <td>15$</td>
+                    <td>you123@gmail.com</td>
+                    <td>Cucumber, Broccoli, Grapes</td>
+                    <td><a class="backendbtn" href="page12.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                
+              
+                <tr>
+                    <td>887755</td>
+                    <td>25$</td>
+                    <td>Door123@gmail.com</td>
+                    <td>Watermelon, Grapes, Bread</td>
+                    <td><a class="backendbtn" href="page12.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+            
+                <tr>
+                    <td>676788</td>
+                    <td>15$</td>
+                    <td>hen123@gmail.com</td>
+                    <td>Mangoes, Grapes, Watermelon</td>
+                    <td><a class="backendbtn" href="page12.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>222345</td>
+                    <td>35.5$</td>
+                    <td>Door123@gmail.com</td>
+                    <td>Broccoli, Green Peppers, Cucumber</td>
+                    <td><a class="backendbtn" href="page12.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>900500</td>
+                    <td>20$</td>
+                    <td>Again123@gmail.com</td>
+                    <td>Watermelon, Mangoes, Cucumber</td>
+                    <td><a class="backendbtn" href="page12.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>123456789</td>
+                    <td>39.99$</td>
+                    <td>Hello123@gmail.com</td>
+                    <td>Mangoes, Cucumber, Green Peppers</td>
+                    <td><a class="backendbtn" href="BackstoreEditOrder.html">Edit</a></td>
+                    <td></button> <button class="backendbtn">Delete</button></td>
+                </tr>
+
+            </table>
+            </div>
+        </p>
+
+
+  </div>
+
+  <div class="footer">
+    
+    <a class="backstore-link" href="backstore-menu.html">Backstore</a>
+  </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="Signup1.css" rel="stylesheet" >
+</head>
+<body>
+	
+	<div id="titile">
+		<h4>SIGN UP HERE</h4>
+		
+	</div>
+	<div id="form-container">
+		<form>
+			<table>
+				<tr>
+					<td>
+						<div>
+							<label style="color: black;">First Name:</label>
+							<input type="text" id="firstname" name="firstname" placeholder="First Name" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<label style="color: black;">Last Name:</label>
+							<input type="text" id="lastname" name="lastname" placeholder="Last Name" />
+						</div>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<div>
+							<label style="color: black;">Email Id:</label>
+							<input type="text" id="email" name="email" placeholder="Email example@gmail.com" />
+							<span id="erro"></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<label style="color: black;">Password</label>
+							<input type="password" id="password" name="password" placeholder="Password" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<label style="color: black;">Confirm Password</label>
+							<input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm password" />
+						</div>
+						<div id="password-message">
+							<h4>Please password must contain the following</h4>
+							<p id="uppercase" class="invalid"><b>A lowercase letter</b></p>
+							<p id="lowercase" class="invalid"><b>A uppercase letter</b></p>
+							<p id="digit" class="invalid"><b>A number</b></p>
+							<p id="lengths" class="invalid"><b>Length must be between 8 to 20</b></p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="show-password"><input type="checkbox" name="checkbox" onclick="show()" /><label>Show password</label></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p id="signup">Do you agree to our <a href="#"> <strong>Terms and Conditions</strong></a></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<p><input type="checkbox" name="checkbox"><strong>Yes,I Agree</strong><label class="checkbox"></label></p>
+							
+								<button >Sign in</button>
+							<input type="submit" name="submit" id="submit" value="Signup"/>
+						</div>
+					</td>
+				</tr>
+		</table>
+		</form>
+	</div>
+		
+	</div>
+</body>
+</html>
