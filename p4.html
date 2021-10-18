@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .cart {
+            margin: 80px auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .cart1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        th {
+            text-align: left;
+            padding: 10px;
+            color: bisque;
+            background-color: brown;
+            font-weight: 300;
+        }
+        
+        td {
+            padding: 15px 20px;
+        }
+        
+        td a {
+            color: brown;
+            font-size: 16px;
+        }
+        
+        td img {
+            height: 100px;
+            width: 100px;
+            margin-right: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cart">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Number of items</th>
+                <th>Total amount</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart1">
+                        <img src="page 2/bread.jpg">
+                        <div>
+                            <p>Bread</p>
+                            <small>Price : 3.50$</small><br>
+                            <a href="">Delete</a>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1" </td>
+                    <td>$3.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart1">
+                        <img src="page 2/croissant.jpg">
+                        <div>
+                            <p>Croissant</p>
+                            <small>Price : 10.00$</small><br>
+                            <a href="">Delete</a>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1" </td>
+                    <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart1">
+                        <img src="page 2/Bagel.jpg">
+                        <div>
+                            <p>Bagel</p>
+                            <small>Price : 2.00$</small><br>
+                            <a href="">Delete</a>
+                        </div>
+
+                    </div>
+                </td>
+                <td><input type="number" value="1" </td>
+                    <td>$2.00</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
