@@ -109,7 +109,7 @@
                         <h3> Red Mangoes</h3>
                         <h5>2kg</h5>
                         <h6>$7.99/ea.</h6>
-			    <p>delicious juicy red mango </p>
+			    <p>juicy red mango </p>
                         <h5>$7.99</h5>
                         <form>
                             <div class="form-group w-25">
@@ -123,28 +123,25 @@
                             </div>
                         </form>
 
-                        <button data-modal-target="#modal" class="btn btn-outline-dark" onclick="openModal()">
+                        <button data-modal-target="#modal" class="btn btn-outline-dark" onclick="togglePopup()">
                             More Description
                         </button>
-			    <div class="modal" id="modal" >
-				    <div class="modal-header">
-					    <div class="title">Description </div>
-					    <button data-close-button class="close-button">&times;</button>
-				    </div>
-				    <div class="modal-body">  Red mangoes are juicy and sweet-tart with green skin.
+			    <div class = "popup" id="popup-1">
+				    <div class="overlay"> </div>
+				    <div class="content">
+					    <div class="close-btn" onclick="togglePopup()">&times; </div>
+					    <h1> Description </h1>
+					    <p> Red mangoes are juicy and sweet-tart with green skin.
 							The creamy, deep-orange flesh is smooth enough for blended recipes, and firm enough for slicing and dicing.
+					    </p>
 				    </div>
 			    </div>
-			    <div id ="overlay"> </div>
                         <button type="button" class="btn btn-primary">
                             Add to Cart
                         </button>
                     </div>
                 </div>
             </div>
-		<script defer src="script.js">
-			
-		</script>
         </main>
 
         <!-- Optional JavaScript functionality -->
