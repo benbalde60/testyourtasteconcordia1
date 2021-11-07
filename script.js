@@ -3,9 +3,9 @@ const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
 
 open.addEventListener('click', () => {
-  modal_container.classList.add('close');
+  modal_container.classList.add('show');
 });
 
-close.addEveentListener('click, () => {
+close.addEveentListener('click', () => {
   modal_container.classList.remove('show');
                         });
