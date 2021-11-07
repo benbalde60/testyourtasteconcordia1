@@ -1,9 +1,6 @@
-function togglePopup(){
-  let popup = document.getElementById("popup-1");
-  if(popup){
-    popup.classList.toggle("active");
-    if(!popup.classList.contains("active")){
-      popup.parentElement.removeChild(popup);
-    }
-  }
-}
+document.getElementById("button").addEventListener("click", function() {
+  document.querySelector(".popup").style.display="flex"; 
+})
+document.querySelector(".close").addEventListener("click", function() {
+  document.querySelector(".popup").style.display ="none";
+  )}
