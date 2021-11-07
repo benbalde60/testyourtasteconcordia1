@@ -40,7 +40,7 @@
 .btn {
 	font-size: 20px;
 }
-.modal-container {
+.modal-content {
 	background-color: rbg(0, 0 ,0,0.3);
 	display: flex;
 	align-items:center;
@@ -56,6 +56,18 @@
 .modal-container.show {
 	pointer-events:auto;
 	opacity:1;
+}
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color:#000;
+	text-decoration: none;
+	cursor: pointer;
 }
 .modal {
 	background-color: #fff;
