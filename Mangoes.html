@@ -29,6 +29,7 @@
         />
         <link rel="stylesheet" href="Mangoes-style.css" />
 	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <script defer src="script.js"> </script>
     </head>
 
     <body>
@@ -122,7 +123,7 @@
                             </div>
                         </form>
 
-                        <button data-modal-target="#modal" type="button" class="btn btn-outline-dark">
+                        <button data-modal-target="#modal"  class="btn btn-outline-dark">
                             More Description
                         </button>
 			    <div class="modal" id="modal" >
@@ -141,39 +142,8 @@
                     </div>
                 </div>
             </div>
-		<script>
-			const openModalButtons = document.querySelectorAll('[data-modal-target]')
-			const closeModalButtons = document.querySelectorAll('[data-close-button]')
-			const overlay = document.getElementByid('overlay')
+		<script defer src="script.js">
 			
-			openModalButtons.forEach(button => {
-				button.addEventListener('click', () => {
-			const modal = document.querySelector(button.dataset.modalTarget)
-			openModal(modal)
-			    })
-                        })
-			overlay.addEventListener('click, () => {
-                            const modals = document.querySelectorAll('.modal.active')
-			modals.ForEach(model =>  {
-				closeModal(modal)
-			     })
-			})
-			closeModalButtons.forEach(button => {
-				button.addEvenetListener('click',() => { 
-	                          const modal = button.closest('.modal')
-				  closeModal(modal) 
-	                     )}
-			)}
-			function openModal(modal) { 
-				if(modal == null) return
-				modal.classList.add('active')
-				overlay.classList.add('active')
-			}
-			function closeModal(modal) {
-				if(modal == null) return
-				modal.classList.remove('active')
-				overlay.classList.remove('active')
-			}
 		</script>
         </main>
 
