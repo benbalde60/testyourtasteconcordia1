@@ -109,7 +109,7 @@
                         <h3> Red Mangoes</h3>
                         <h5>2kg</h5>
                         <h6>$7.99/ea.</h6>
-			    <p>delicious juicy red mango </p>
+			    <p> juicy red mango </p>
                         <h5>$7.99</h5>
                         <form>
                             <div class="form-group w-25">
@@ -123,17 +123,15 @@
                             </div>
                         </form>
 
-                        <button data-modal-target="#modal" class="btn btn-outline-dark" onclick="togglePopup()">
+                        <button id="open" class="btn btn-outline-dark" >
                             More Description
                         </button>
-			    <div class = "popup" id="popup-1">
-				    <div class="overlay"> </div>
-				    <div class="content">
-					    <div class="close-btn" onclick="togglePopup()">&times; </div>
+			    <div class="modal-container" id="modal_container">
+				    <div class="modal">
 					    <h1> Description </h1>
-					    <p> Red mangoes are juicy and sweet-tart with green skin.
-							The creamy, deep-orange flesh is smooth enough for blended recipes, and firm enough for slicing and dicing.
-					    </p>
+					    <p>Red mangoes are juicy and sweet-tart with green skin. The creamy, deep-orange flesh is smooth enough for blended recipes, 
+						    and firm enough for slicing and dicing. </p>
+					    <button id="close">close</button>
 				    </div>
 			    </div>
                         <button type="button" class="btn btn-primary">
