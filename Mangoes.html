@@ -108,7 +108,7 @@
                         <h3> Red Mangoes</h3>
                         <h5>2kg</h5>
                         <h6>$7.99/ea.</h6>
-			    <p> A  delicious juicy red mango </p>
+			    <p> A juicy red mango </p>
                         <h5>$7.99</h5>
                         <form>
                             <div class="form-group w-25">
@@ -146,9 +146,10 @@
 			const closeModalButtons = document.querySelectorAll('[data-close-button]')
 			const overlay = document.getElementByid('overlay')
 			
-			openModalButtons.forEach(button => { button.addEventListener('click' () => {
-			const modal = button.closest('.modal')
-			closeModal(modal)
+			openModalButtons.forEach(button => {
+				button.addEventListener('click', () => {
+			const modal = document.querySelector(button.dataset.modalTarget)
+			openModal(modal)
 			    })
                         })
 			overlay.addEventListener('click, () => {
@@ -158,7 +159,7 @@
 			     })
 			})
 			closeModalButtons.forEach(button => {
-				button.addEvenetListener('click,() => { 
+				button.addEvenetListener('click',() => { 
 	                          const modal = button.closest('.modal')
 				  closeModal(modal) 
 	                     )}
