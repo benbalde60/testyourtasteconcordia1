@@ -5,5 +5,5 @@ for (var i =0; i < deleteButtons.length;i++) {
         var buttonClicked = event.target
         buttonClicked.parentElement.parentElement.parentElement.parentElement.remove()
                           
-                          }
+                          })
  }
