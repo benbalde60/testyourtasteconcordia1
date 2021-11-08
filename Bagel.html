@@ -99,12 +99,85 @@
                         Bagel, doughnut-shaped yeast-leavened roll that is characterized by a crisp, shiny crust and a dense interior.
                     </p>
                     <h5>$2.00</h5>
-                    <form>
+                                  <form>
                         <div class="form-group w-25">
-                            <input class="form-control form-control-lg" type="number" min="1" placeholder="1" />
-                            <label for="quantity">Quantity</label>
+                            <input id="bagel" class="form-control form-control-lg" value="this" onclick="calculateAmount(this.value)" required type="number" min="1" placeholder="1" />
+                            <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:60px;"><label for="quantity">Quantity</label>
                         </div>
+
                     </form>
+
+                    <button type="button" class="btn btn-outline-dark">
+                        More Description
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function calculateAmount(val) {
+            var tot_price = val * 2.00;
+            if (Number.isNaN(tot_price)) {
+                var divobj = document.getElementById('tot_amount');
+                divobj.value = "0.00$";
+            } else {
+                var divobj = document.getElementById('tot_amount');
+                var pr = tot_price.toFixed(2) + "$";
+                divobj.value = pr;
+            }
+
+        }
+
+        function setCookie(cname, cvalue) {
+            document.cookie = cname + "=" + cvalue + ";";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1, c.length);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return null;
+        }
+
+        function checkCookie() {
+            let qty = getCookie('qtyP');
+            if (!Number.isNaN(qty)) {
+                return qty;
+            } else {
+                return null;
+            }
+        }
+
+        window.onload = function() {
+            var i = parseInt(checkCookie());
+            if (i != null) {
+                document.getElementById("bagel").value = i;
+                calculateAmount(i);
+                console.log(getCookie('Pr'));
+            } else {
+                document.getElementById("bagel").value = null;
+                document.getElementById('tot_amount').value = "";
+            }
+            console.log(document.getElementById("bagel").value);
+            console.log(document.getElementById("tot_amount").value);
+        }
+
+        window.onbeforeunload = function() {
+            setCookie('qtyP', document.getElementById("bagel").value);
+        }
+    </script>
 
                     <button type="button" class="btn btn-outline-dark">
                             More Description
