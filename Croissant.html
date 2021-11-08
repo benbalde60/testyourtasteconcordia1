@@ -100,8 +100,9 @@
                     <h5>$10.00</h5>
                     <form>
                         <div class="form-group w-25">
-                            <input class="form-control form-control-lg" type="number" min="1" placeholder="1" />
-                            <label for="quantity">Quantity</label>
+                            <input class="form-control form-control-lg" value="this" onclick="calculateAmount(this.value)" required type="number" min="1" placeholder="1" id="Croissant" /> l for=<input type="quantity" name="tot_amount" id="tot_amount"
+                                type="text" readonly style="border: none; width:60px;">
+                            <label class="quantity">Quantity</label>
                         </div>
                     </form>
 
@@ -115,6 +116,67 @@
             </div>
         </div>
     </main>
+    <script>
+        function calculateAmount(val) {
+            var tot_price = val * 15.00;
+            if (Number.isNaN(tot_price)) {
+                var divobj = document.getElementById('tot_amount');
+                divobj.value = "0.00$";
+            } else {
+                var divobj = document.getElementById('tot_amount');
+                var pr = tot_price.toFixed(2) + "$";
+                divobj.value = pr;
+            }
+
+        }
+
+        function setCookie(cname, cvalue) {
+            document.cookie = cname + "=" + cvalue + ";";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1, c.length);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return null;
+        }
+
+        function checkCookie() {
+            let qty = getCookie('qtyP');
+            if (!Number.isNaN(qty)) {
+                return qty;
+            } else {
+                return null;
+            }
+        }
+
+        window.onload = function() {
+            var i = parseInt(checkCookie());
+            if (i != null) {
+                document.getElementById("Croissant").value = i;
+                calculateAmount(i);
+                console.log(getCookie('Pr'));
+            } else {
+                document.getElementById("Croissant").value = null;
+                document.getElementById('tot_amount').value = "";
+            }
+            console.log(document.getElementById("Croissant").value);
+            console.log(document.getElementById("tot_amount").value);
+        }
+
+        window.onbeforeunload = function() {
+            setCookie('qtyP', document.getElementById("Croissant").value);
+        }
+    </script>
 
     <!-- Optional JavaScript functionality -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
