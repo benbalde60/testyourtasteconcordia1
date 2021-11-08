@@ -10,7 +10,7 @@ for (var i =0; i < deleteButtons.length;i++) {
  function updateCartTotal() {
          var cartItems = document.getElementsByClassName('cart')[0]
          var cartRows = cartItems.getElementsByClassName('cart1')
-         var totalPrice
+         var totalPrice = 0
          for(var i=0; i < cartRows.length;i++) {
            var cartRow = cartRows[i]
            var priceElement = cartRow.getElementsByClassName('price')[0]
