@@ -22,5 +22,6 @@ for (var i =0; i < deleteButtons.length;i++) {
            
                   }
    document.getElementsByClassName('total-price')[0].innerText ='$'+ total
+ }
          
       
