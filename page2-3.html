@@ -10,6 +10,7 @@
     <title>Aisles</title>
     <link rel="stylesheet" type="text/css" href="styles-universal.css" />
     <link rel="stylesheet" type="text/css" href="styles-main.css" />
+	<script type="text/javascript" src="addTocart.js"></script>
 </head>
 
 <body>
@@ -70,12 +71,12 @@
                         <div class="embed-responsive embed-responsive-4by3">
                             <a href="Croissant.html"><img src="croissant.jpg" class="card-img-top embed-responsive-item" alt="croissant"> </a>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" id="item1">
 				<a href="Croissant.html"><h4 class="card-title">Croissant</h4></a>
-                            <p class="card-text">Croissant &#8211; 1 box</p>
+                            <div class ="title"><p class="card-text">Croissant &#8211; 1 box</p></div>
                             <p class="card-text card-price">&#36;10.00</p>
                             <p class="card-text"><small class="text-muted">&#36;10.00 / 1kg</small></p>
-                            <h5 class="cart">add to cart</h5>
+                            <button onclick="addToCart(item1)" class="cart">add to cart</button>
                         </div>
                     </div>
                 </div>
