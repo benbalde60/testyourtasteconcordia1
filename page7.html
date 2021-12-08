@@ -73,7 +73,7 @@
 		<td>2kg </td>
 		<td>$7.99 </td>
 		<td>0</td>
-		<td>  <button class="btn" onclick="removeElement(Mango)"> <i class="fas fa-minus-circle"></i> </button>
+		<td>  <button class="btn" onclick="deleteRow(this)"> <i class="fas fa-minus-circle"></i> </button>
 			 <a href="page8.html"><button class="btn"> <i class="fas fa-edit"></i> </button> </a>
 			 		</td>
 	</tr>
@@ -255,6 +255,12 @@
             integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
             crossorigin="anonymous"
         ></script>
+	<script> 
+		function deleteRow(btn) {
+			var row= btn.parentNode.parentNode;
+			row.parentNode.removeChild(row);
+		}
+	</script>
 
 	</body>
 </html>
